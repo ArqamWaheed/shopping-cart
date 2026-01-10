@@ -1,5 +1,5 @@
-import './Homepage.css'
-import wallpaper from './assets/Wallpaper.png' 
+import '../styles/Homepage.css'
+import wallpaper from '../../assets/Wallpaper.png' 
 
 function Homepage() {
   return (
