@@ -1,0 +1,7 @@
+nav {
+    height: 60px;
+    background-color: var(--bg-dark);
+    box-shadow: var(--shadow);
+    border-bottom: 2px solid var(--bg);
+    padding: 8px 40px;
+}

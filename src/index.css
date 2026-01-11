@@ -51,25 +51,19 @@ h6 {
 }
 
 :root {
-  /* Base backgrounds */
-  --bg: hsl(8, 55%, 12%);               /* deep crimson */
-  --bg-dark: hsl(8, 55%, 8%);
-  --bg-light: hsl(8, 55%, 16%);
-  --bg-dark-transparent: hsl(8 55% 8% / 0.95);
-
-  /* Borders & structure */
-  --border: hsl(8, 40%, 28%);
-  --border-dark: hsl(8, 40%, 20%);
+  --bg-dark: hsl(7, 94%, 19%);           
+  --bg: hsl(7, 94%, 24%);                
+  --bg-light: hsl(7, 94%, 29%);         
+  --bg-dark-transparent: hsl(7 94% 19% / 0.95);
+  --border: hsl(7, 55%, 38%);
+  --border-dark: hsl(7, 55%, 30%);
   --border-card: 1px solid var(--border);
+  --text: hsl(38, 45%, 94%);            
+  --text-muted: hsl(38, 45%, 69%);
 
-  /* Text */
-  --text: hsl(40, 35%, 94%);            /* warm white */
-  --text-muted: hsl(30, 25%, 75%);
-
-  /* Gradients */
   --bg-gradient: linear-gradient(
     0deg,
-    var(--bg) 95%,
+    var(--bg) 92%,
     var(--bg-light)
   );
   --bg-gradient-hover: linear-gradient(
@@ -78,18 +72,15 @@ h6 {
     var(--bg-light)
   );
 
-  /* Accents */
-  --primary: hsl(42, 80%, 65%);    /* straw hat gold */
-  --secondary: hsl(0, 65%, 55%);   /* jacket red (controlled) */
+  --primary: hsl(42, 85%, 64%);     /* straw-hat gold */
+  --secondary: hsl(0, 65%, 56%);    /* jacket red (controlled) */
 
-  /* Highlights */
-  --highlight: hsl(8, 65%, 50%);
-  --tertiary-border: hsl(42, 75%, 70%);
+  --highlight: hsl(7, 80%, 52%);
+  --tertiary-border: hsl(42, 75%, 72%);
 
-  /* Shadow */
   --shadow:
-    0px 2px 2px hsla(0, 0%, 0%, 0.1),
-    0px 6px 14px hsla(0, 0%, 0%, 0.4);
+    0px 2px 2px hsla(0, 0%, 0%, 0.12),
+    0px 8px 18px hsla(0, 0%, 0%, 0.45);
 }
 
 html {

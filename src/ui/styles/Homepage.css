@@ -1,16 +1,16 @@
 .Homepage {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 60px);
   position: relative;
 }
 
-.WallpaperImg {
+.Homepage .WallpaperImg {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.textContent {
+.Homepage .textContent {
   max-width: 50%;
   background: hsl(8 55% 8% / 0.4);
   backdrop-filter: blur(6px);
@@ -22,16 +22,16 @@
   padding: 2.5rem;
 }
 
-h1, p{
+.Homepage h1, .Homepage p{
   color: var(--text);
   font-size: 5rem;
 }
 
-p {
+.Homepage p {
   font-size: 1.5rem;
 }
 
-hr { 
+.Homepage hr { 
   margin-top: 8px;
   margin-bottom: 32px;
   border: none; 
@@ -45,7 +45,7 @@ hr {
 }
 
 
-.BuyBtn {
+.Homepage .BuyBtn {
   margin-top: 48px;
   font-weight: 700;
   color: var(--text);
@@ -60,7 +60,7 @@ hr {
   border: 1px solid var(--border);
 }
 
-.BuyBtn:hover {
+.Homepage .BuyBtn:hover {
   cursor: pointer;
   background: linear-gradient(
     to left,

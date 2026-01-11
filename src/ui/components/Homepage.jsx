@@ -5,7 +5,7 @@ function Homepage() {
   return (
     <>
       <div className="Homepage">
-        <img className="WallpaperImg" src={wallpaper} alt="Wallpaper" /> 
+        <img src={wallpaper} className="WallpaperImg" alt="Wallpaper" /> 
         <div className="textContent">
           <h1>BROWSE THE <span>COLLECTION</span></h1>
           <hr></hr>
