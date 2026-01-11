@@ -2,6 +2,66 @@ nav {
     height: 60px;
     background-color: var(--bg-dark);
     box-shadow: var(--shadow);
-    border-bottom: 2px solid var(--bg);
+    border-bottom: 3px solid var(--bg);
     padding: 8px 40px;
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.navLogoDiv {
+    display: flex;
+    gap: 10px;
+}
+
+.navLogoDiv h2 {
+    font-size: 1.8rem;
+} 
+
+.navLogoDiv span {
+    color: var(--primary);
+}
+
+.imgLogo {
+    height: 36px;
+    width: 36px;
+}
+
+.navNavDiv {
+    justify-content: center;
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    gap: clamp(16px, 9vw, 180px);
+    color: var(--text);
+}
+
+.navNavDiv p::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(
+    to left,
+    var(--primary) 30%,
+    var(--secondary)
+    );
+    width: 120%;
+    bottom: -1px;
+    left: -10%;  
+    height: 0;
+    transition: 0.1s height ease-out;
+}
+
+.navNavDiv p {
+    position: relative;
+}
+
+.navNavDiv p:hover {
+    cursor: pointer;
+}
+
+.navNavDiv p:hover::before {
+    height: 3px;
 }

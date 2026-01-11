@@ -11,7 +11,7 @@
 }
 
 .Homepage .textContent {
-  max-width: 50%;
+  width: 50%;
   background: hsl(8 55% 8% / 0.4);
   backdrop-filter: blur(6px);
   border-radius: 1rem;
@@ -24,11 +24,12 @@
 
 .Homepage h1, .Homepage p{
   color: var(--text);
-  font-size: 5rem;
+  font-size: clamp(1.3rem, calc(0.9rem + 4.5vw), 4.8rem);
 }
 
 .Homepage p {
-  font-size: 1.5rem;
+  font-size: clamp(0.8rem, calc(0.7rem + 1.2vw), 1.25rem);
+  line-height: 1.5;
 }
 
 .Homepage hr { 
@@ -56,7 +57,7 @@
   );
   padding: 8px 24px;
   border-radius: 16px;
-  font-size: 1.5rem;
+  font-size: clamp(0.8rem, calc(0.7rem + 1.2vw), 1.25rem);
   border: 1px solid var(--border);
 }
 
@@ -67,4 +68,11 @@
     var(--primary) 50%,
     var(--secondary)
   );
+}
+
+@media (max-width: 1120px) {
+  .Homepage .textContent {
+    right: 48px;
+    width: auto; 
+  }
 }
