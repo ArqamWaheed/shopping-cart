@@ -39,6 +39,18 @@ nav {
     color: var(--text);
 }
 
+.navNavDiv .menu-icon {
+    display: none;
+}
+
+.navNavDiv .menu-svg {
+    fill: var(--text);
+} 
+
+.navNavDiv .menu-icon:hover {
+    cursor: pointer;
+}
+
 .navNavDiv p::before {
     content: '';
     position: absolute;
@@ -64,4 +76,18 @@ nav {
 
 .navNavDiv p:hover::before {
     height: 3px;
+}
+
+@media (max-width: 980px) {
+  .nav-hide {
+    display: none;
+  }
+
+  .navNavDiv .menu-icon {
+    display: inline;
+  }
+
+  .navNavDiv {
+    justify-content: flex-end;
+  }
 }
