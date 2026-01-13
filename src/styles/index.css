@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+a {
+  all: unset;
+}
+
 body {
   line-height: 1.25;
   -webkit-font-smoothing: antialiased;
