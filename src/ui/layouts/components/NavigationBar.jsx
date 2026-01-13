@@ -1,5 +1,5 @@
-import "../styles/NavigationBar.css";
-import Logo from "../../assets/Logo.png"
+import '../../../styles/NavigationBar.css';
+import Logo from '../../../assets/Logo.png'
 
 function NavigationBar() {
 
@@ -15,7 +15,7 @@ function NavigationBar() {
                 <p className="nav-hide">About</p>
                 <p className="nav-hide">Contact</p>
                 <p className="nav-hide">FAQ</p>
-                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path class="menu-svg" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>           
+                <svg className="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path className="menu-svg" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>           
             </div>
         </nav>
     )
