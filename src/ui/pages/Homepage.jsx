@@ -11,7 +11,7 @@ function Homepage() {
           <h1>BROWSE THE <span>COLLECTION</span></h1>
           <hr />
           <p>Authentic One Piece figurines crafted for collectors who value detail, quality, and character accuracy. Each piece captures the spirit of the character, from sculpting to paint, made to stand out on any shelf.</p>
-          <button className="BuyBtn"><Link to="/shop">Buy Now</Link></button>
+          <Link to="/shop"><button className="BuyBtn">Buy Now</button></Link>
         </div>
       </div>
     </>
