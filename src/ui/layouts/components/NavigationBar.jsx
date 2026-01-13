@@ -2,7 +2,6 @@ import '../../../styles/NavigationBar.css';
 import Logo from '../../../assets/Logo.png'
 
 function NavigationBar() {
-
     return (
         <nav>
             <div className="navLogoDiv">
