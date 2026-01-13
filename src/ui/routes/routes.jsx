@@ -1,6 +1,7 @@
 import Homepage from "../pages/Homepage";
 import { MainLayout } from "../layouts/MainLayout";
 import ErrorPage from "../pages/Errorpage";
+import SalePage from "../pages/SalePage";
 
 const routes = [
     {
@@ -14,7 +15,7 @@ const routes = [
             },
             {
                 path: "shop",
-                element: null,
+                element: <SalePage />,
             }
         ]
     }, 

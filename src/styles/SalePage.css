@@ -1,0 +1,14 @@
+.SalePage {
+    min-height: calc(100vh - 60px);
+    width: 100%;
+    background-color: var(--bg-dark);
+    padding: 40px;
+}
+
+.SalePageContainer {
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    justify-content: center;
+    gap: 32px;
+}

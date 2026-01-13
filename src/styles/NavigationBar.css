@@ -14,6 +14,7 @@ nav {
 .navLogoDiv {
     display: flex;
     gap: 10px;
+    flex-shrink: 0;
 }
 
 .navLogoDiv h2 {
@@ -41,6 +42,7 @@ nav {
 
 .navNavDiv .menu-icon {
     display: none;
+    flex-shrink: 0;
 }
 
 .navNavDiv .menu-svg {
@@ -89,5 +91,6 @@ nav {
 
   .navNavDiv {
     justify-content: flex-end;
+    gap: 16px;
   }
 }
