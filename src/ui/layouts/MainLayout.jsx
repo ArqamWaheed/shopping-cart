@@ -1,13 +1,17 @@
 import { Outlet } from "react-router";
 import NavigationBar from "./components/NavigationBar";
+import { useState } from "react";
 
 export const MainLayout = () => {
+  const [cartAmount, setCartAmount] = useState(0);
   return (
     <div className="app">
-      <NavigationBar />
+      <NavigationBar cartAmount={cartAmount}/>
       <main>
-        <Outlet />
+        <Outlet context={[cartAmount, setCartAmount]}/>
       </main>
     </div>
   );
 };
+
+
