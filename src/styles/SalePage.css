@@ -2,7 +2,6 @@
   min-height: calc(100vh - 60px);
   width: 100%;
   background-color: var(--bg-dark);
-  /* responsive outer padding so content breathes on small screens */
   padding: clamp(16px, 4vw, 40px);
   box-sizing: border-box;
 }
@@ -15,6 +14,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
     gap: clamp(1rem, 4vw, 3rem);
+    padding-inline: clamp(12px, 4vw, 40px);
 }
 
 
@@ -22,7 +22,6 @@
   max-width: 1280px;
   margin: 0 auto 2.5rem auto;
   padding-inline: clamp(12px, 4vw, 40px);
-  box-sizing: border-box;
 }
 
 .SaleIntro__content {
@@ -55,9 +54,4 @@
   line-height: 1.5;
   max-width: 80ch;
   opacity: 0.95; 
-}
-
-.SalePageContainer {
-  padding-inline: clamp(12px, 4vw, 40px);
-  box-sizing: border-box;
 }

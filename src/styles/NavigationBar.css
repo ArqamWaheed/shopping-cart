@@ -3,7 +3,7 @@ nav {
     background-color: var(--bg-dark);
     box-shadow: var(--shadow);
     border-bottom: 3px solid var(--bg);
-    padding: 8px 40px;
+    padding: 8px clamp(16px, 4vw, 40px);
     display: flex;
     align-items: center;
     color: var(--text);

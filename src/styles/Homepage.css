@@ -17,7 +17,7 @@
   border-radius: 1rem;
   position: absolute;
   top: 50%;
-  left: 48px;
+  left: clamp(16px, 4vw, 40px);
   transform: translateY(-50%);
   padding: 2.5rem;
 }
@@ -72,8 +72,8 @@
 
 @media (max-width: 1120px) {
   .Homepage .textContent {
-    left: 48px;
-    right: 48px;
+    left: clamp(16px, 4vw, 40px);
+    right: clamp(16px, 4vw, 40px);
     width: auto; 
   }
 }
