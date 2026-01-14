@@ -2,6 +2,9 @@ import Homepage from "../pages/Homepage";
 import { MainLayout } from "../layouts/MainLayout";
 import ErrorPage from "../pages/Errorpage";
 import SalePage from "../pages/SalePage";
+import AboutPage from "../pages/AboutPage";
+import ContactPage from "../pages/ContactPage";
+import FAQPage from "../pages/FAQPage";
 
 const routes = [
     {
@@ -16,6 +19,18 @@ const routes = [
             {
                 path: "shop",
                 element: <SalePage />,
+            },
+            {
+                path: "about",
+                element: <AboutPage />,
+            },
+            {
+                path: "contact",
+                element: <ContactPage />,
+            },
+            {
+                path: "faq",
+                element: <FAQPage />,
             }
         ]
     }, 

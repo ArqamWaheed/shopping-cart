@@ -26,12 +26,11 @@
 
 .SaleIntro__content {
   background-color: var(--bg); 
-  backdrop-filter: blur(8px) saturate(120%);
   border-radius: 16px;
   padding: clamp(16px, 2.5vw, 32px);
   color: var(--text);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
-  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  border: 1px solid var(--border);
 }
 
 .SaleIntro__content h1 {
