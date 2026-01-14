@@ -1,4 +1,65 @@
 .saleCard {
-    width: 300px;
-    background-color: var(--bg);
+    max-width: 300px;
+    background: var(--bg-gradient);
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    border-top: 1px solid var(--highlight);
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
+
+.saleCard:hover {
+    background: var(--bg-gradient-hover);
+}
+
+.saleCardImg {  
+    width: 100%;
+    min-height: 200px;
+    height: auto;      
+    display: block;     
+    object-fit: cover;   
+    flex: 0 0 auto;     
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+.saleCard h2 {
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
+    color: var(--text);
+    min-width: 0;     /* important for ellipsis inside flex */
+    width: 100%;      /* ensure the element has a constrained width */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.saleCard h3 {
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    color: var(--text-muted);
+}
+
+.saleCardBtn {
+    transition: all 0.2s ease-out;
+    width: fit-content;
+    background-color: var(--primary);
+    padding: 0.5rem 1rem 0.7rem 1rem;
+    border: none;
+    border-radius: 16px;
+    color: var(--text);
+    font-weight: 700;
+    border: solid 1px var(--border);
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+.saleCardBtn:hover {
+    cursor: pointer;
+    transform: translate(0.5px, -0.5px);
+    background-color: var(--secondary);
+}
+
+

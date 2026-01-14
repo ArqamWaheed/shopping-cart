@@ -1,14 +1,63 @@
 .SalePage {
-    min-height: calc(100vh - 60px);
-    width: 100%;
-    background-color: var(--bg-dark);
-    padding: 40px;
+  min-height: calc(100vh - 60px);
+  width: 100%;
+  background-color: var(--bg-dark);
+  /* responsive outer padding so content breathes on small screens */
+  padding: clamp(16px, 4vw, 40px);
+  box-sizing: border-box;
 }
 
 .SalePageContainer {
+    max-width: 1280px;
+    margin: 0 auto; 
     display: grid;
-    grid-auto-rows: 300px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-auto-rows: 400px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
-    gap: 32px;
+    gap: clamp(1rem, 4vw, 3rem);
+}
+
+
+.SaleIntro {
+  max-width: 1280px;
+  margin: 0 auto 2.5rem auto;
+  padding-inline: clamp(12px, 4vw, 40px);
+  box-sizing: border-box;
+}
+
+.SaleIntro__content {
+  background-color: var(--bg); 
+  backdrop-filter: blur(8px) saturate(120%);
+  border-radius: 16px;
+  padding: clamp(16px, 2.5vw, 32px);
+  color: var(--text);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.SaleIntro__content h1 {
+  margin: 0 0 16px 0;
+  font-size: clamp(2rem, 4.2vw, 3.2rem);
+  line-height: 1.05;
+}
+
+.SaleIntro__content hr {
+  margin: 8px 0 18px 0;
+  border: none;
+  height: 3px;
+  width: clamp(48px, 8%, 120px);
+  background: linear-gradient(to left, var(--primary) 30%, var(--secondary));
+}
+
+.SaleIntro__content p {
+  margin: 0;
+  font-size: clamp(1.2rem, 1.8vw, 1.3rem);
+  line-height: 1.5;
+  max-width: 80ch;
+  opacity: 0.95; 
+}
+
+.SalePageContainer {
+  padding-inline: clamp(12px, 4vw, 40px);
+  box-sizing: border-box;
 }
