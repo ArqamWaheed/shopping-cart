@@ -77,6 +77,25 @@
 @media (max-width: 900px) {
   .CartContent {
     grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+
+  .CartItem {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .CartItem__controls {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .CartItem__subtotal {
+    text-align: center;
+  }
+
+  .CartSummary {
+    position: static;
   }
 }
 

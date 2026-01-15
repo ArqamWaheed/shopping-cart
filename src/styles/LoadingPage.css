@@ -1,0 +1,71 @@
+.LoadingPage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.LoadingPage--fadeOut {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.LoadingContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 32px;
+    background-color: var(--bg);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+.LoadingGif {
+    width: clamp(150px, 40vw, 250px);
+    height: auto;
+    border-radius: 12px;
+}
+
+.LoadingContent h2 {
+    color: var(--text);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.LoadingBar {
+    width: 200px;
+    height: 6px;
+    background-color: var(--bg-dark);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.LoadingBar__progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    border-radius: 3px;
+    animation: loadProgress 1.5s ease-in-out forwards;
+}
+
+@keyframes loadProgress {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 70%;
+    }
+    100% {
+        width: 100%;
+    }
+}
