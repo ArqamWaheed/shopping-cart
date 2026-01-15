@@ -5,6 +5,7 @@ import SalePage from "../pages/SalePage";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import FAQPage from "../pages/FAQPage";
+import CartPage from "../pages/CartPage";
 
 const routes = [
     {
@@ -31,6 +32,10 @@ const routes = [
             {
                 path: "faq",
                 element: <FAQPage />,
+            },
+            {
+                path: "cart",
+                element: <CartPage />,
             }
         ]
     }, 
